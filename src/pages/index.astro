@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact.astro';
+import Introduction from '../components/Introduction.astro';
+import Gallery from '../components/Gallery.astro';
+import Location from '../components/Location.astro';
+import ProyectOf from '../components/ProyectOf.astro';
+import Footer from '../components/Footer.astro';
+import Lots from '../components/lots.astro';
+import ImplantationV2 from '../components/ImplantationV2.astro';
+---
+
+<Layout title="Manta Hills">
+	<main>
+		<Introduction />
+		<Gallery />
+		<Lots />
+		<ImplantationV2 />
+		<Location />
+		<ProyectOf />
+		<Contact />
+		<Footer />
+	</main>
+</Layout>
+
+<style is:global>
+	main {
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+</style>

@@ -1,0 +1,154 @@
+---
+import Image from "astro/components/Image.astro"
+import step1 from '../assets/steps/step1.png'
+import step2 from '../assets/steps/step2.png'
+import step3 from '../assets/steps/step3.png'
+import step4 from '../assets/steps/step4.png'
+import step5 from '../assets/steps/step5.png'
+import finish from '../assets/steps/finish.png'
+---
+<div class="steps-container">
+    <h2>¿CÓMO COTIZAR?</h2>
+    <section class="steps-quote">
+        <div class="step-left">
+            <Image src={step1} alt="Entrada a Manta Hills en la noche" />
+            <div class="info-step">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="40" fill="#31515C"/>
+                    <path d="M34.1492 31.12L39.4292 27.8H42.2692V51.76C42.2692 52.6933 42.3092 53.24 42.3892 53.4C42.4692 53.56 42.7226 53.6667 43.1492 53.72L45.3492 53.96V55H34.9092V53.96L37.9092 53.72C38.3359 53.6933 38.5892 53.6 38.6692 53.44C38.7492 53.2533 38.7892 52.6933 38.7892 51.76V29.72L34.8292 32.2L34.1492 31.12Z" fill="white"/>
+                </svg>
+                <span>Selecciona una manzana<br>o<br>haz click en "VER PLANO COMPLETO".</span>
+            </div>
+        </div>
+        <div class="step-right">
+            <div class="info-step">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="40" fill="#31515C"/>
+                    <path d="M46.6588 47.08H47.6988V55H31.6588V52.88C31.6588 51.04 31.9654 49.5067 32.5788 48.28C33.1921 47.0533 33.9788 46.0133 34.9388 45.16C35.9254 44.28 36.9788 43.48 38.0988 42.76C39.0588 42.12 39.9921 41.4667 40.8988 40.8C41.8054 40.1333 42.5521 39.32 43.1388 38.36C43.7521 37.3733 44.0588 36.1467 44.0588 34.68C44.0588 32.6533 43.6588 31.1467 42.8588 30.16C42.0854 29.1733 40.9921 28.68 39.5788 28.68C37.7388 28.68 36.4588 29.3467 35.7388 30.68C35.0454 31.9867 34.8321 33.8667 35.0987 36.32L31.6188 35.68C31.3521 34.24 31.4588 32.8933 31.9388 31.64C32.4454 30.3867 33.3388 29.3733 34.6188 28.6C35.8988 27.8 37.5654 27.4 39.6188 27.4C41.5921 27.4 43.1921 27.7467 44.4188 28.44C45.6454 29.1333 46.5388 30.04 47.0988 31.16C47.6588 32.28 47.9388 33.48 47.9388 34.76C47.9388 36.2267 47.6588 37.4533 47.0988 38.44C46.5388 39.4267 45.8054 40.24 44.8988 40.88C43.9921 41.52 43.0054 42.0933 41.9388 42.6C40.8721 43.08 39.8321 43.5867 38.8188 44.12C37.8321 44.6267 36.9254 45.2267 36.0988 45.92C35.2988 46.6133 34.6321 47.4533 34.0988 48.44C33.5921 49.4 33.2854 50.5867 33.1788 52H43.4988C44.4321 52 44.9921 51.9467 45.1788 51.84C45.3921 51.7067 45.5521 51.4133 45.6588 50.96L46.6588 47.08Z" fill="white"/>
+                </svg>
+                <span>Si estas en el mapa completo<br>puedes escoger la manzana de tu agrado.</span>
+            </div>
+            <Image src={step2} alt="Entrada a Manta Hills en la noche" />
+        </div>
+        <div class="step-left">
+            <Image src={step3} alt="Entrada a Manta Hills en la noche" />
+            <div class="info-step">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="40" fill="#31515C"/>
+                    <path d="M37.8531 41.64H36.7731V40.36H37.8531C40.0665 40.36 41.6131 39.8 42.4931 38.68C43.3998 37.56 43.8531 36.12 43.8531 34.36C43.8531 32.4933 43.4665 31.08 42.6931 30.12C41.9198 29.16 40.8265 28.68 39.4131 28.68C37.5731 28.68 36.2931 29.3467 35.5731 30.68C34.8798 31.9867 34.6665 33.8667 34.9331 36.32L31.4531 35.68C31.2131 34.24 31.3331 32.8933 31.8131 31.64C32.3198 30.3867 33.1998 29.3733 34.4531 28.6C35.7331 27.8 37.3998 27.4 39.4531 27.4C41.4265 27.4 43.0131 27.7333 44.2131 28.4C45.4398 29.04 46.3331 29.8933 46.8931 30.96C47.4531 32 47.7331 33.1333 47.7331 34.36C47.7331 36.2267 47.1598 37.7067 46.0131 38.8C44.8931 39.8933 43.2665 40.6267 41.1331 41C43.3998 41.3467 45.1331 42.12 46.3331 43.32C47.5598 44.52 48.1731 46.1467 48.1731 48.2C48.1731 49.5067 47.8531 50.7067 47.2131 51.8C46.5998 52.8933 45.6398 53.7733 44.3331 54.44C43.0531 55.08 41.3865 55.4 39.3331 55.4C37.3865 55.4 35.6798 54.9467 34.2131 54.04C32.7731 53.1333 31.7465 51.5067 31.1331 49.16L33.6531 48.44C33.8665 49.9067 34.2398 51.0533 34.7731 51.88C35.3331 52.7067 35.9865 53.2933 36.7331 53.64C37.5065 53.96 38.3198 54.12 39.1731 54.12C42.5865 54.12 44.2931 52.1467 44.2931 48.2C44.2931 46.28 43.8131 44.7067 42.8531 43.48C41.8931 42.2533 40.2265 41.64 37.8531 41.64Z" fill="white"/>
+                </svg>
+                <span>Selecciona el lote disponible</span>
+            </div>
+        </div>
+        <div class="step-right">
+            <div class="info-step">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="40" fill="#31515C"/>
+                    <path d="M46.6588 47.08H47.6988V55H31.6588V52.88C31.6588 51.04 31.9654 49.5067 32.5788 48.28C33.1921 47.0533 33.9788 46.0133 34.9388 45.16C35.9254 44.28 36.9788 43.48 38.0988 42.76C39.0588 42.12 39.9921 41.4667 40.8988 40.8C41.8054 40.1333 42.5521 39.32 43.1388 38.36C43.7521 37.3733 44.0588 36.1467 44.0588 34.68C44.0588 32.6533 43.6588 31.1467 42.8588 30.16C42.0854 29.1733 40.9921 28.68 39.5788 28.68C37.7388 28.68 36.4588 29.3467 35.7388 30.68C35.0454 31.9867 34.8321 33.8667 35.0987 36.32L31.6188 35.68C31.3521 34.24 31.4588 32.8933 31.9388 31.64C32.4454 30.3867 33.3388 29.3733 34.6188 28.6C35.8988 27.8 37.5654 27.4 39.6188 27.4C41.5921 27.4 43.1921 27.7467 44.4188 28.44C45.6454 29.1333 46.5388 30.04 47.0988 31.16C47.6588 32.28 47.9388 33.48 47.9388 34.76C47.9388 36.2267 47.6588 37.4533 47.0988 38.44C46.5388 39.4267 45.8054 40.24 44.8988 40.88C43.9921 41.52 43.0054 42.0933 41.9388 42.6C40.8721 43.08 39.8321 43.5867 38.8188 44.12C37.8321 44.6267 36.9254 45.2267 36.0988 45.92C35.2988 46.6133 34.6321 47.4533 34.0988 48.44C33.5921 49.4 33.2854 50.5867 33.1788 52H43.4988C44.4321 52 44.9921 51.9467 45.1788 51.84C45.3921 51.7067 45.5521 51.4133 45.6588 50.96L46.6588 47.08Z" fill="white"/>
+                </svg>
+                <span>Selecciona los plazos y la entrada.</span>
+                <p>* Los periodos no deben ser mayor a 36 meses</p>
+                <p>* La entrada (enganche) debe ser mayor o igual a 2000$</p>
+            </div>
+            <Image src={step4} alt="Entrada a Manta Hills en la noche" />
+        </div>
+        <div class="step-left">
+            <Image src={step5} alt="Entrada a Manta Hills en la noche" />
+            <div class="info-step">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="40" fill="#31515C"/>
+                    <path d="M45.9852 24.52H47.0252V30.88H34.7052L34.2252 39.44C34.9985 38.9067 35.8385 38.5067 36.7452 38.24C37.6785 37.9733 38.6385 37.84 39.6252 37.84C42.2652 37.84 44.3585 38.6533 45.9052 40.28C47.4518 41.88 48.2252 44.0267 48.2252 46.72C48.2252 48.24 47.9318 49.6667 47.3452 51C46.7585 52.3067 45.8118 53.3733 44.5052 54.2C43.2252 55 41.5452 55.4 39.4652 55.4C37.6252 55.4 36.0252 54.9467 34.6652 54.04C33.3052 53.1067 32.3185 51.48 31.7052 49.16L34.2252 48.44C34.5452 50.6267 35.1718 52.12 36.1052 52.92C37.0385 53.72 38.0918 54.12 39.2652 54.12C40.9185 54.12 42.1718 53.52 43.0252 52.32C43.9052 51.0933 44.3452 49.2267 44.3452 46.72C44.3452 44.5067 43.9585 42.7067 43.1852 41.32C42.4385 39.9067 41.1052 39.2 39.1852 39.2C38.2785 39.2 37.3452 39.3733 36.3852 39.72C35.4252 40.04 34.4785 40.6133 33.5452 41.44L32.7452 41.08L33.5052 27.8H43.4252C44.3852 27.8 44.9585 27.76 45.1452 27.68C45.3585 27.5733 45.5052 27.2667 45.5852 26.76L45.9852 24.52Z" fill="white"/>
+                </svg>
+                <span>Llena el formulario con tu información y envía tu cotización</span>
+                <p>* Todos los campos deben ser llenados</p>
+            </div>
+        </div>
+    </section>
+    <div class="finishSteps">
+        <h3>HAZ TERMINADO</h3>
+        <Image src={finish} alt="Mensaje de 'Cotización enviada!" />
+        <p>Te llegará un correo electrónico con la cotización en PDF y los datos ingresados.</p>
+        <p>Una vez finalizada la cotización puedes cerrar la ventana.</p>
+        <div class="buttonQuote">
+            <a href="/#Cotizar"><button>Regresar</button></a>
+        </div>
+    </div>
+</div>
+
+<style scoped>
+    h2{
+        color: var(--dark-color);
+    }
+    span, .finishSteps p{
+        color: var(--main-color);
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .steps-container{
+        text-align: center;
+        margin: 15vh 0 5em 0;
+    }
+    .steps-quote img, .finishSteps img{
+        height: 30vw;
+        width: auto;
+    }
+    .step-left, .step-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2em;
+    }
+    .info-step{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .info-step svg{
+        width: 8vw;
+    }
+    .finishSteps{
+        margin: 1em 0;
+    }
+    .finishSteps p{
+        padding: 1em 0;
+    }
+    .buttonQuote{
+        margin: 1em ;
+    }
+    .buttonQuote a{
+        text-decoration: none;
+    }
+    .buttonQuote button{
+        cursor: pointer;
+        font-weight: 600;
+        padding: 1em 1.5em;
+        text-align: center;
+        background-color: var(--secondary-color);
+        box-shadow: 10px 5px var(--main-color);
+        border: 0px;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .buttonQuote button:hover{
+        transform: translate(10px, 5px);
+        background-color: var(--main-color);
+        box-shadow: 0px 0px;
+    }
+    @media (max-width:500px) {
+        
+        .steps-quote img, .finishSteps img{
+            width: 60vw;
+            height: auto;
+        }
+        .info-step{
+            font-size: 12px;
+            gap: 0;
+            margin-bottom: 2em;
+        }  
+        .finishSteps {
+            font-size: 12px;
+        }
+    }
+</style>

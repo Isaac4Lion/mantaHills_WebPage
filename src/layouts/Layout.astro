@@ -1,0 +1,98 @@
+---
+import { Tooltips } from 'astro-tooltips';
+import Header from '../components/Header.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<Tooltips interactive={false} delay={[15, 15]} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header isHome={"isHome"}/>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	
+	:root {
+		--main-color: #3E7484;
+		--secondary-color: #52808E;
+		--third-color: #C9E6EE;
+		--dark-color: #2b535f;
+	}
+	html {
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	}
+	body{
+		margin: 0;
+	}
+	.tittle{
+		text-align: center;
+	}
+	.tittle h2{
+		margin: 1em 0 0 0;
+		color: var(--main-color);
+	}
+	.tittle hr{
+		width: 5em;
+		border: 3px solid var(--main-color);
+	}
+</style>
+<script>
+// Core de Swiper y estilos
+import Swiper from 'swiper';
+import 'swiper/css';
+// Módulo Navigation de Swiper y estilos
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
+
+// Photoswipe y estilos
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+// Configurar e inicializar Photoswipe
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#my-slider',
+  children: 'a',
+  pswpModule: () => import('photoswipe')
+});
+lightbox.init();
+
+// Configurar Swiper
+new Swiper(".swiper", {
+	modules: [Navigation], // definir los módulos a usar
+	loop: true,
+	slidesPerView: "auto",
+	spaceBetween: 20,
+	breakpoints: {
+		// Cuando la pantalla es >= 768px
+		768: {
+		slidesPerView: 2,
+		spaceBetween: 30
+		},
+		// Cuando la pantalla es >= 1024px
+		1024: {
+		slidesPerView: 3,
+		spaceBetween: 40
+		}
+	},
+	navigation: {          // definir botones next y prev para el módulo Navigation
+		prevEl: ".swiper-button-prev",
+		nextEl: ".swiper-button-next",
+	}
+});
+</script>

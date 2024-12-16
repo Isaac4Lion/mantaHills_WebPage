@@ -1,0 +1,51 @@
+---
+import Image from 'astro/components/Image.astro'
+import logoColor from '../assets/logos/logoColor.png'
+---
+<section class="imageBg"></section>
+<section class="intro-container">
+    <Image  src={logoColor} alt='Manta Hills S.C a color' loading='lazy'/>
+    <p>CONSTRUYE TU FUTURO, INVIERTE EN TU FAMILIA.</p>
+    <span>Construye la casa de tus sueños</span>
+    <span id="Proyecto" class="anchor-point"></span>
+</section>
+<style scoped>
+    .imageBg{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background-image: url(../assets/backgroundImage.jpg);
+        background-size: cover;
+    }
+    .intro-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F7F7F9;
+        padding: 2em 0;
+    }
+    .intro-container span{
+        color: var(--main-color);
+    }
+    .intro-container p{
+        color: var(--dark-color);
+        font-weight: 600;
+        text-align: center;
+    }
+    .intro-container img{
+        width: 15em;
+        height: auto;
+    }
+    .anchor-point {
+        position: absolute;
+        top: 80vh;
+        visibility: hidden;
+    }
+    @media (max-width:425px) {
+        .imageBg{
+            height: 60vh;
+        }
+    }
+</style>

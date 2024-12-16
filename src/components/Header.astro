@@ -1,0 +1,76 @@
+---
+import { Image } from 'astro:assets'
+import logoBW from '../assets/logos/logo.png'
+
+---
+
+<nav>
+    <a href="/"><Image src={logoBW} alt='Manta Hills S.C' loading='eager' class='logoBW'/></a>
+    <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/#Proyecto">Proyecto</a></li>
+        <li><a href="/#Cotizar">Cotizar</a></li>
+        <li><a href="/#Ubicacion">Ubicación</a></li>
+        <li><a href="/#Contactos">Contacto</a></li>
+    </ul>
+</nav>
+<style scoped>
+	nav{
+        font-family: "Poppins", sans-serif;
+        font-size: large;
+        font-weight: 500;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #2f8a9e;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .logoBW{
+        padding: .1em 0 0 0;
+        width: 125px;
+        height: auto;
+        transition: transform .3s ease;
+    }
+    .logoBW:hover{
+        transform: scale(1.1);
+    }
+    nav ul{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        justify-content: center;
+    }
+    nav li{
+        list-style: none;
+        transition: transform .3s ease;
+    }
+    nav li:hover{
+        transform: scale(1.2);
+    }
+    nav li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    nav li a:hover{
+        color: #000000;
+        
+    }
+    
+    @media (max-width:690px) {
+        nav{
+            justify-content: space-between;
+        }
+        nav ul{
+            display: none;
+        }
+        nav img{
+            padding: .5em 0 0 .5em;
+            width: 100px;
+        }
+    }
+    
+    
+</style>

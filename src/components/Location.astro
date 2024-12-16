@@ -1,0 +1,49 @@
+<section>
+    <div class="tittle">
+        <span class="anchor-point" id="Ubicacion"></span>
+        <h2>UBICACIÓN</h2>
+        <hr>
+    </div>
+    <div class="location-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2402545031364!2d-80.75637929999999!3d-0.9753376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be30b61dcca1d%3A0x975fdfd1c139349d!2sManta%20Hills!5e0!3m2!1ses-419!2sec!4v1719850499977!5m2!1ses-419!2sec" 
+            title="Urbanización de Manta Hills"
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="false"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="info-location">
+            <ul>
+                <li>Ubicada en Manta</li>
+                <li>Frente al complejo deportivo "Metal Hierro"</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<style scoped>
+    .location-container{
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        margin: 2em;
+    }
+    .anchor-point {
+        position: relative;
+        top: -95px;
+        visibility: hidden;
+    }
+    @media (max-width:690px) {
+        .location-container{
+            flex-direction: column;
+        }
+    }
+    @media (max-width:525px) {
+        .location-container iframe{
+            max-width: 90vw;
+        }
+    }
+</style>

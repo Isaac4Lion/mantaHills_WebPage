@@ -1,0 +1,43 @@
+---
+import Image from 'astro/components/Image.astro'
+import logoSVG from '../assets/logos/logoFooter.svg'
+---
+<footer>
+    <div class="footer-content">
+        <Image src={logoSVG} alt='Manta Hills S.C'/>
+        <span>Manta - Ecuador</span>
+        <div class="info-location">
+            <p>Urbanización Manta Hills. Calle Jesús de Nazareth, Frente al complejo deportivo Metal Hierro Manta, Ecuador</p>
+        </div>
+    </div>
+    <span>© 2024 por Manta Hills S.C.C</span>
+</footer>
+<style>
+    .footerImg{
+        margin-top: 3em;
+        width: 99.3vw;
+    }
+    footer{
+        color: #fff;
+        background-color: var(--main-color);
+        text-align: center;
+    }
+    .footer-content{
+        display: grid;
+        align-items: center;
+        grid-template-columns:1fr 1fr 1fr;
+        padding: 2em;
+    }
+    @media (max-width:768px) {
+        .footer-content{
+            font-size: 16px;
+            justify-items: center;
+            grid-template-columns:1fr;
+            gap: 3em;
+            padding: 2em;
+        }
+        span{
+            font-size: 16px;
+        }
+    }
+    </style>
